@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/news_main.css">
+    <link rel="stylesheet" href="./assets/css/news_responsive.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boostrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div id="mega-menu2">
+            <div class="mega-menu-bg">
+                <div class="cs-container">
+                    <div class="megamenu-title">
+                        <div class="logo-search">
+                            <a href="home.html">
+                                <svg viewBox="0 0 2578 481" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Robb Report</title>
+                                    <path
+                                        d="
+                                    M109.3 189.7V31.2h40c69.9 0 92.9 26.7 92.9 74.7 0 51.2-15.5 83.8-87 83.8h-45.9zm0 15h43.2c59.2 0 77.4 11.7 82.7 64.6l4.3 45.9c4.8 48.6 16.5 66.7 79 66.7 10.7 0 25.6-1.6 35.8-4.3v-11.7c-42.2-1.1-52.8-8.5-59.8-49.1l-5.3-36.3c-7.5-48-20.3-77.9-91.8-83.2v-1.6c73.1-12.8 100.9-47 100.9-91.3 0-48-37.4-88.1-145.2-88.1H.4V28c46.4 1.6 58.2 11.2 58.2 31v276.4c0 19.7-11.7 28.8-58.2 30.4v12.3h165.4v-12.3c-48.6-1.6-56.6-9.6-56.6-30.4l.1-130.7zm344.2 177.7c67.2 0 119.5-53.4 119.5-128.1 0-74.2-49.6-125.4-119.5-125.4-67.8 0-120.6 53.4-120.6 127.5 0 74.8 49.6 126 120.6 126zm2.1-13.4c-42.7 0-72-32.6-72-113.7 0-81.6 25.1-113.7 67.2-113.7 42.7 0 72 32 72 113.7.1 81.2-25.6 113.7-67.2 113.7zm142 15.5h9.1l22.4-28.3c26.1 18.7 52.3 26.1 80.6 26.1 69.9 0 113.1-62.4 113.1-133.9 0-68.8-37.4-119.5-100.3-119.5-33.1 0-56.6 12.8-78.4 34.7V.8L556 2.9v11.2c35.2 1.1 43.2 9.1 43.2 26.7v296.7l-1.6 47zM705.4 369c-26.1 0-50.2-14.9-61.4-46.4V178c16-16.5 34.2-26.7 59.2-26.7 42.2 0 69.9 41.6 69.9 99.8 0 72.6-21.3 117.9-67.7 117.9zm139.8 15.5h9.1l22.4-28.3c26.1 18.7 52.3 26.1 80.6 26.1 69.9 0 113.1-62.4 113.1-133.9 0-68.8-37.4-119.5-100.3-119.5-33.1 0-56.6 12.8-78.4 34.7V.8l-88.1 2.1v11.2c35.2 1.1 43.2 9.1 43.2 26.7v296.7l-1.6 47zM953 369c-26.1 0-50.2-14.9-61.4-46.4V178c16-16.5 34.2-26.7 59.2-26.7 42.2 0 69.9 41.6 69.9 99.8.1 72.6-21.3 117.9-67.7 117.9zm290.8-179.3V31.2h40c69.9 0 92.9 26.7 92.9 74.7 0 51.2-15.5 83.8-87 83.8h-45.9zm0 15h43.2c59.2 0 77.4 11.7 82.7 64.6l4.3 45.9c4.8 48.6 16.5 66.7 79 66.7 10.7 0 25.6-1.6 35.8-4.3v-11.7c-42.2-1.1-52.8-8.5-59.8-49.1l-5.3-36.3c-7.5-48-20.3-77.9-91.8-83.2v-1.6c73.1-12.8 100.9-47 100.9-91.3 0-48-37.4-88.1-145.2-88.1H1135V28c46.4 1.6 58.2 11.2 58.2 31v276.4c0 19.7-11.7 28.8-58.2 30.4v12.3h165.4v-12.3c-48.6-1.6-56.6-9.6-56.6-30.4V204.7zm341.6 177.7c53.9 0 81.6-30.4 101.4-63.5l-8-6.9c-21.9 27.2-43.8 45.9-75.8 45.9-55 0-83.8-45.9-83.8-105.1v-9.6h164.9c4.3-58.7-28.8-114.2-98.7-114.2-65.6 0-115.3 56-115.3 129.1 0 70.4 43.2 124.3 115.3 124.3zm-3.8-240.7c41.1 0 58.2 36.3 53.4 87.5l-115.3 1.6c4.3-61.9 28.3-89.1 61.9-89.1zm103.6 338.9h134.5v-11.2c-39.5-.5-50.7-4.3-50.7-20.3v-84.9c19.7 10.7 39 17.6 66.2 17.6 68.8 0 110.5-58.2 110.5-131.8 0-70.4-34.7-121.1-96.6-121.1-33.1 0-58.2 16-81.1 38.4v-35.2l-82.7 2.1v11.2c31 .5 39 10.7 39 26.7v277c0 16-8 19.7-39 20.3v11.2h-.1zm143.5-112.1c-29.9 0-49.6-13.3-59.8-45.9V181.7c15.5-17.1 34.2-30.4 60.3-30.4 42.2 0 66.7 42.7 66.7 101.4.1 74.7-26.6 115.8-67.2 115.8zm257.3 13.9c67.2 0 119.5-53.4 119.5-128.1 0-74.2-49.6-125.4-119.5-125.4-67.8 0-120.6 53.4-120.6 127.5-.1 74.8 49.6 126 120.6 126zm2.1-13.3c-42.7 0-72-32.6-72-113.7 0-81.6 25.1-113.7 67.2-113.7 42.7 0 72 32 72 113.7 0 81.1-25.6 113.7-67.2 113.7zm118.5 9h128.6v-11.7c-34.7-.5-44.8-4.3-44.8-19.7v-151c13.9-22.4 29.9-38.4 53.9-40-1.1 3.7-2.1 8-2.1 11.7 0 18.1 13.3 28.3 29.3 28.3 16.5 0 27.8-12.8 27.8-29.9 0-18.1-11.7-35.8-39-35.8s-51.8 20.8-71 50.2v-48l-82.7 2.1v11.2c30.9.5 39 10.7 39 26.7v174.5c0 15.5-8 19.2-39 19.7v11.7zm299.4 5.4c32 0 53.4-16.5 72-50.7l-9.1-6.4c-13.9 21.3-28.3 32.6-43.2 32.6-21.9 0-32-12.8-32-43.8V153.4h76.8v-19.2h-76.8V45.6l-44.3 19.2v67.8l-48.6 11.2V154h48v161.7c0 44.8 18.7 67.8 57.2 67.8z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <div class="search-main">
+                                <input type="text" placeholder="Search" id="">
+                                <span class="search-icon">
+                                    <svg viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Search</title>
+                                        <g transform="translate(.7)" stroke-width="1.58" fill="none"
+                                            fill-rule="evenodd">
+                                            <circle cx="7" cy="7" r="5.71"></circle>
+                                            <path d="M14 14l3 3" stroke-linecap="square"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-x" id="cs-xmarkicon2"></i>
+                    </div>
+
+                    <div class="megamenu-main">
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="megamenu-main-lastone">
+                        <div class="social">
+                            <p>Follow Us</p>
+                            <div class="social-main">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="sign-up">
+                            <p>Alerts & Newsletters</p>
+                            <form action="">
+                                <input type="text" class="input-text" placeholder="e-mail adress">
+                                <input type="btn" class="input-btn" value="SİGN UP">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="megamenu-main-lasttwo">
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="mega-menu">
+            <div class="mega-menu-bg">
+                <div class="cs-container">
+                    <div class="megamenu-title">
+                        <div class="logo-search">
+                            <a href="home.html">
+                                <svg viewBox="0 0 2578 481" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Robb Report</title>
+                                    <path
+                                        d="
+                                    M109.3 189.7V31.2h40c69.9 0 92.9 26.7 92.9 74.7 0 51.2-15.5 83.8-87 83.8h-45.9zm0 15h43.2c59.2 0 77.4 11.7 82.7 64.6l4.3 45.9c4.8 48.6 16.5 66.7 79 66.7 10.7 0 25.6-1.6 35.8-4.3v-11.7c-42.2-1.1-52.8-8.5-59.8-49.1l-5.3-36.3c-7.5-48-20.3-77.9-91.8-83.2v-1.6c73.1-12.8 100.9-47 100.9-91.3 0-48-37.4-88.1-145.2-88.1H.4V28c46.4 1.6 58.2 11.2 58.2 31v276.4c0 19.7-11.7 28.8-58.2 30.4v12.3h165.4v-12.3c-48.6-1.6-56.6-9.6-56.6-30.4l.1-130.7zm344.2 177.7c67.2 0 119.5-53.4 119.5-128.1 0-74.2-49.6-125.4-119.5-125.4-67.8 0-120.6 53.4-120.6 127.5 0 74.8 49.6 126 120.6 126zm2.1-13.4c-42.7 0-72-32.6-72-113.7 0-81.6 25.1-113.7 67.2-113.7 42.7 0 72 32 72 113.7.1 81.2-25.6 113.7-67.2 113.7zm142 15.5h9.1l22.4-28.3c26.1 18.7 52.3 26.1 80.6 26.1 69.9 0 113.1-62.4 113.1-133.9 0-68.8-37.4-119.5-100.3-119.5-33.1 0-56.6 12.8-78.4 34.7V.8L556 2.9v11.2c35.2 1.1 43.2 9.1 43.2 26.7v296.7l-1.6 47zM705.4 369c-26.1 0-50.2-14.9-61.4-46.4V178c16-16.5 34.2-26.7 59.2-26.7 42.2 0 69.9 41.6 69.9 99.8 0 72.6-21.3 117.9-67.7 117.9zm139.8 15.5h9.1l22.4-28.3c26.1 18.7 52.3 26.1 80.6 26.1 69.9 0 113.1-62.4 113.1-133.9 0-68.8-37.4-119.5-100.3-119.5-33.1 0-56.6 12.8-78.4 34.7V.8l-88.1 2.1v11.2c35.2 1.1 43.2 9.1 43.2 26.7v296.7l-1.6 47zM953 369c-26.1 0-50.2-14.9-61.4-46.4V178c16-16.5 34.2-26.7 59.2-26.7 42.2 0 69.9 41.6 69.9 99.8.1 72.6-21.3 117.9-67.7 117.9zm290.8-179.3V31.2h40c69.9 0 92.9 26.7 92.9 74.7 0 51.2-15.5 83.8-87 83.8h-45.9zm0 15h43.2c59.2 0 77.4 11.7 82.7 64.6l4.3 45.9c4.8 48.6 16.5 66.7 79 66.7 10.7 0 25.6-1.6 35.8-4.3v-11.7c-42.2-1.1-52.8-8.5-59.8-49.1l-5.3-36.3c-7.5-48-20.3-77.9-91.8-83.2v-1.6c73.1-12.8 100.9-47 100.9-91.3 0-48-37.4-88.1-145.2-88.1H1135V28c46.4 1.6 58.2 11.2 58.2 31v276.4c0 19.7-11.7 28.8-58.2 30.4v12.3h165.4v-12.3c-48.6-1.6-56.6-9.6-56.6-30.4V204.7zm341.6 177.7c53.9 0 81.6-30.4 101.4-63.5l-8-6.9c-21.9 27.2-43.8 45.9-75.8 45.9-55 0-83.8-45.9-83.8-105.1v-9.6h164.9c4.3-58.7-28.8-114.2-98.7-114.2-65.6 0-115.3 56-115.3 129.1 0 70.4 43.2 124.3 115.3 124.3zm-3.8-240.7c41.1 0 58.2 36.3 53.4 87.5l-115.3 1.6c4.3-61.9 28.3-89.1 61.9-89.1zm103.6 338.9h134.5v-11.2c-39.5-.5-50.7-4.3-50.7-20.3v-84.9c19.7 10.7 39 17.6 66.2 17.6 68.8 0 110.5-58.2 110.5-131.8 0-70.4-34.7-121.1-96.6-121.1-33.1 0-58.2 16-81.1 38.4v-35.2l-82.7 2.1v11.2c31 .5 39 10.7 39 26.7v277c0 16-8 19.7-39 20.3v11.2h-.1zm143.5-112.1c-29.9 0-49.6-13.3-59.8-45.9V181.7c15.5-17.1 34.2-30.4 60.3-30.4 42.2 0 66.7 42.7 66.7 101.4.1 74.7-26.6 115.8-67.2 115.8zm257.3 13.9c67.2 0 119.5-53.4 119.5-128.1 0-74.2-49.6-125.4-119.5-125.4-67.8 0-120.6 53.4-120.6 127.5-.1 74.8 49.6 126 120.6 126zm2.1-13.3c-42.7 0-72-32.6-72-113.7 0-81.6 25.1-113.7 67.2-113.7 42.7 0 72 32 72 113.7 0 81.1-25.6 113.7-67.2 113.7zm118.5 9h128.6v-11.7c-34.7-.5-44.8-4.3-44.8-19.7v-151c13.9-22.4 29.9-38.4 53.9-40-1.1 3.7-2.1 8-2.1 11.7 0 18.1 13.3 28.3 29.3 28.3 16.5 0 27.8-12.8 27.8-29.9 0-18.1-11.7-35.8-39-35.8s-51.8 20.8-71 50.2v-48l-82.7 2.1v11.2c30.9.5 39 10.7 39 26.7v174.5c0 15.5-8 19.2-39 19.7v11.7zm299.4 5.4c32 0 53.4-16.5 72-50.7l-9.1-6.4c-13.9 21.3-28.3 32.6-43.2 32.6-21.9 0-32-12.8-32-43.8V153.4h76.8v-19.2h-76.8V45.6l-44.3 19.2v67.8l-48.6 11.2V154h48v161.7c0 44.8 18.7 67.8 57.2 67.8z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <div class="search-main">
+                                <input type="text" placeholder="Search" id="">
+                                <span class="search-icon">
+                                    <svg viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Search</title>
+                                        <g transform="translate(.7)" stroke-width="1.58" fill="none"
+                                            fill-rule="evenodd">
+                                            <circle cx="7" cy="7" r="5.71"></circle>
+                                            <path d="M14 14l3 3" stroke-linecap="square"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-x" id="cs-xmarkicon"></i>
+                    </div>
+
+                    <div class="megamenu-main">
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="megamenu-main-text">
+                            <a href="#">Motors</a>
+                            <ul class="main-ul-text">
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem.</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="megamenu-main-lastone">
+                        <div class="social">
+                            <p>Follow Us</p>
+                            <div class="social-main">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="sign-up">
+                            <p>Alerts & Newsletters</p>
+                            <form action="">
+                                <input type="text" class="input-text" placeholder="e-mail adress">
+                                <input type="btn" class="input-btn" value="SİGN UP">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="megamenu-main-lasttwo">
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cs-container">
+
+            <div class="header-title">
+                <div id="search-menu">
+                    <div class="input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search" id="mysearch">
+                    </div>
+                    <div class="search-resp-social">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <button id="hamburger2" class="header-nav__icon" aria-label="navigation menu">
+                    <span class="menu__initial">
+                        <svg viewBox="0 0 22 15" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M2 7.5h18m-18 6h18M2 1.5h18" stroke-width="2.09" fill="none"
+                                stroke-linecap="square"></path>
+                        </svg>
+                    </span>
+                </button>
+                <a href="#" id="resp-block-a">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 720 252"
+                        style="enable-background:new 0 0 720 252;" xml:space="preserve">
+                        <title>RR One</title>
+                        <style type="text/css">
+                            .st0 {
+                                fill: #BE1E2D;
+                            }
+                        </style>
+                        <g>
+                            <g>
+                                <g>
+                                    <path class="st0" d="M488,239.1c37.2-0.4,47.3-4.2,47.3-23.5V44.2c0-22.1-5.3-25.9-47-26.6v-2.8l75.7-6.3v207.1
+                                        c0,18.9,9.5,23.1,47.7,23.5v3.1H488V239.1z"></path>
+                                </g>
+                            </g>
+                            <path d="M435.9,199.7l-2-14.5c-5.1-36.3-15.5-54.8-64.2-59.9v-1c49.8-7.7,70.6-29.2,70.6-59.5c0-35-34.6-57.2-96.5-57.2h-97.8v2.7
+                                c34.3,1,39.7,7.1,39.7,23.2v182.3c0,12.9-3.4,19.2-21.3,21.8c-1.9,0.2-3.9,0.3-5.8,0.4c-28.7-0.5-34.3-7.9-39.5-38.3l-2-14.5
+                                c-5.1-36.3-15.5-54.8-64.2-59.9v-1c49.8-7.7,70.6-29.2,70.6-59.5c0-35-34.6-57.2-96.5-57.2H29.1v2.7c34.3,1,39.7,7.1,39.7,23.2
+                                v182.3c0,16.5-5.4,22.2-39.7,23.2v3h106.3v-3c-33.6-1-38-6.4-38-22.8v-88.8h33c40,0,50.1,7.7,54.1,41.4l3.7,30.3
+                                c3.2,25.8,8.1,40.1,27.9,43.7l-0.1,0c0,0,14.2,3.2,55.7-0.7h80.5v-3c-33.6-1-38-6.4-38-22.8v-88.8h33c40,0,50.1,7.7,54.1,41.4
+                                L405,199c3.7,30.3,9.8,44.7,39.3,44.7c11.1,0,23.5-1,34.6-3V238C447,238,441.3,231.3,435.9,199.7z M129.4,122.3h-32V12.7h27.9
+                                c49.4,0,65.6,17.2,65.6,52.5C190.9,102.8,179.8,122.3,129.4,122.3z M346.1,122.3h-32V12.7h27.9c49.4,0,65.6,17.2,65.6,52.5
+                                C407.7,102.8,396.6,122.3,346.1,122.3z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <div class="logo">
+                    <a href="home.html">
+                        <svg viewBox="0 0 2578 481" xmlns="http://www.w3.org/2000/svg">
+                            <title>Robb Report</title>
+                            <path
+                                d="
+                            M109.3 189.7V31.2h40c69.9 0 92.9 26.7 92.9 74.7 0 51.2-15.5 83.8-87 83.8h-45.9zm0 15h43.2c59.2 0 77.4 11.7 82.7 64.6l4.3 45.9c4.8 48.6 16.5 66.7 79 66.7 10.7 0 25.6-1.6 35.8-4.3v-11.7c-42.2-1.1-52.8-8.5-59.8-49.1l-5.3-36.3c-7.5-48-20.3-77.9-91.8-83.2v-1.6c73.1-12.8 100.9-47 100.9-91.3 0-48-37.4-88.1-145.2-88.1H.4V28c46.4 1.6 58.2 11.2 58.2 31v276.4c0 19.7-11.7 28.8-58.2 30.4v12.3h165.4v-12.3c-48.6-1.6-56.6-9.6-56.6-30.4l.1-130.7zm344.2 177.7c67.2 0 119.5-53.4 119.5-128.1 0-74.2-49.6-125.4-119.5-125.4-67.8 0-120.6 53.4-120.6 127.5 0 74.8 49.6 126 120.6 126zm2.1-13.4c-42.7 0-72-32.6-72-113.7 0-81.6 25.1-113.7 67.2-113.7 42.7 0 72 32 72 113.7.1 81.2-25.6 113.7-67.2 113.7zm142 15.5h9.1l22.4-28.3c26.1 18.7 52.3 26.1 80.6 26.1 69.9 0 113.1-62.4 113.1-133.9 0-68.8-37.4-119.5-100.3-119.5-33.1 0-56.6 12.8-78.4 34.7V.8L556 2.9v11.2c35.2 1.1 43.2 9.1 43.2 26.7v296.7l-1.6 47zM705.4 369c-26.1 0-50.2-14.9-61.4-46.4V178c16-16.5 34.2-26.7 59.2-26.7 42.2 0 69.9 41.6 69.9 99.8 0 72.6-21.3 117.9-67.7 117.9zm139.8 15.5h9.1l22.4-28.3c26.1 18.7 52.3 26.1 80.6 26.1 69.9 0 113.1-62.4 113.1-133.9 0-68.8-37.4-119.5-100.3-119.5-33.1 0-56.6 12.8-78.4 34.7V.8l-88.1 2.1v11.2c35.2 1.1 43.2 9.1 43.2 26.7v296.7l-1.6 47zM953 369c-26.1 0-50.2-14.9-61.4-46.4V178c16-16.5 34.2-26.7 59.2-26.7 42.2 0 69.9 41.6 69.9 99.8.1 72.6-21.3 117.9-67.7 117.9zm290.8-179.3V31.2h40c69.9 0 92.9 26.7 92.9 74.7 0 51.2-15.5 83.8-87 83.8h-45.9zm0 15h43.2c59.2 0 77.4 11.7 82.7 64.6l4.3 45.9c4.8 48.6 16.5 66.7 79 66.7 10.7 0 25.6-1.6 35.8-4.3v-11.7c-42.2-1.1-52.8-8.5-59.8-49.1l-5.3-36.3c-7.5-48-20.3-77.9-91.8-83.2v-1.6c73.1-12.8 100.9-47 100.9-91.3 0-48-37.4-88.1-145.2-88.1H1135V28c46.4 1.6 58.2 11.2 58.2 31v276.4c0 19.7-11.7 28.8-58.2 30.4v12.3h165.4v-12.3c-48.6-1.6-56.6-9.6-56.6-30.4V204.7zm341.6 177.7c53.9 0 81.6-30.4 101.4-63.5l-8-6.9c-21.9 27.2-43.8 45.9-75.8 45.9-55 0-83.8-45.9-83.8-105.1v-9.6h164.9c4.3-58.7-28.8-114.2-98.7-114.2-65.6 0-115.3 56-115.3 129.1 0 70.4 43.2 124.3 115.3 124.3zm-3.8-240.7c41.1 0 58.2 36.3 53.4 87.5l-115.3 1.6c4.3-61.9 28.3-89.1 61.9-89.1zm103.6 338.9h134.5v-11.2c-39.5-.5-50.7-4.3-50.7-20.3v-84.9c19.7 10.7 39 17.6 66.2 17.6 68.8 0 110.5-58.2 110.5-131.8 0-70.4-34.7-121.1-96.6-121.1-33.1 0-58.2 16-81.1 38.4v-35.2l-82.7 2.1v11.2c31 .5 39 10.7 39 26.7v277c0 16-8 19.7-39 20.3v11.2h-.1zm143.5-112.1c-29.9 0-49.6-13.3-59.8-45.9V181.7c15.5-17.1 34.2-30.4 60.3-30.4 42.2 0 66.7 42.7 66.7 101.4.1 74.7-26.6 115.8-67.2 115.8zm257.3 13.9c67.2 0 119.5-53.4 119.5-128.1 0-74.2-49.6-125.4-119.5-125.4-67.8 0-120.6 53.4-120.6 127.5-.1 74.8 49.6 126 120.6 126zm2.1-13.3c-42.7 0-72-32.6-72-113.7 0-81.6 25.1-113.7 67.2-113.7 42.7 0 72 32 72 113.7 0 81.1-25.6 113.7-67.2 113.7zm118.5 9h128.6v-11.7c-34.7-.5-44.8-4.3-44.8-19.7v-151c13.9-22.4 29.9-38.4 53.9-40-1.1 3.7-2.1 8-2.1 11.7 0 18.1 13.3 28.3 29.3 28.3 16.5 0 27.8-12.8 27.8-29.9 0-18.1-11.7-35.8-39-35.8s-51.8 20.8-71 50.2v-48l-82.7 2.1v11.2c30.9.5 39 10.7 39 26.7v174.5c0 15.5-8 19.2-39 19.7v11.7zm299.4 5.4c32 0 53.4-16.5 72-50.7l-9.1-6.4c-13.9 21.3-28.3 32.6-43.2 32.6-21.9 0-32-12.8-32-43.8V153.4h76.8v-19.2h-76.8V45.6l-44.3 19.2v67.8l-48.6 11.2V154h48v161.7c0 44.8 18.7 67.8 57.2 67.8z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="text-subscribe">
+                    <a href="#">
+                        <p>subscribe</p>
+                    </a>
+                </div>
+                <div class="search-resp">
+
+                    <i class="fa-solid fa-magnifying-glass" id="searchicon-resp"></i>
+                    <i class="fa-solid fa-x" id="cs-xmarkicon-resp"></i>
+                </div>
+
+            </div>
+            <div class="cs-nav">
+                <button id="hamburger3" class="header-nav__icon" aria-label="navigation menu">
+                    <span class="menu__initial">
+                        <svg viewBox="0 0 22 15" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M2 7.5h18m-18 6h18M2 1.5h18" stroke-width="2.09" fill="none"
+                                stroke-linecap="square"></path>
+                        </svg>
+                    </span>
+                </button>
+                <ul class="cs-menu">
+                    <a href="cars.html">
+                        <li>CARS</li>
+                    </a>
+                    <a href="#">
+                        <li>YACHTS</li>
+                    </a>
+                    <a href="#">
+                        <li>AVIATION</li>
+                    </a>
+                    <a href="#">
+                        <li>WATCHES</li>
+                    </a>
+                    <a href="#">
+                        <li>STYLE</li>
+                    </a>
+                    <a href="#">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#">
+                        <li>FOOD & DRINK</li>
+                    </a>
+                    <a href="#">
+                        <li>TRAVEL</li>
+                    </a>
+                </ul>
+                <div class="search">
+                    <div class="icon"></div>
+                    <div class="input">
+                        <input type="text" placeholder="Search" id="mysearch">
+                    </div>
+                </div>
+            </div>
+            <div class="cs-nav-scroll">
+                <div id="search-menu2">
+                    <div class="input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search" id="mysearch">
+                    </div>
+                    <div class="search-resp-social">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="logo-scroll1">
+                    <svg viewBox="0 0 2578 481" xmlns="http://www.w3.org/2000/svg">
+                        <title>Robb Report</title>
+                        <path
+                            d="M109.3 189.7V31.2h40c69.9 0 92.9 26.7 92.9 74.7 0 51.2-15.5 83.8-87 83.8h-45.9zm0 15h43.2c59.2 0 77.4 11.7 82.7 64.6l4.3 45.9c4.8 48.6 16.5 66.7 79 66.7 10.7 0 25.6-1.6 35.8-4.3v-11.7c-42.2-1.1-52.8-8.5-59.8-49.1l-5.3-36.3c-7.5-48-20.3-77.9-91.8-83.2v-1.6c73.1-12.8 100.9-47 100.9-91.3 0-48-37.4-88.1-145.2-88.1H.4V28c46.4 1.6 58.2 11.2 58.2 31v276.4c0 19.7-11.7 28.8-58.2 30.4v12.3h165.4v-12.3c-48.6-1.6-56.6-9.6-56.6-30.4l.1-130.7zm344.2 177.7c67.2 0 119.5-53.4 119.5-128.1 0-74.2-49.6-125.4-119.5-125.4-67.8 0-120.6 53.4-120.6 127.5 0 74.8 49.6 126 120.6 126zm2.1-13.4c-42.7 0-72-32.6-72-113.7 0-81.6 25.1-113.7 67.2-113.7 42.7 0 72 32 72 113.7.1 81.2-25.6 113.7-67.2 113.7zm142 15.5h9.1l22.4-28.3c26.1 18.7 52.3 26.1 80.6 26.1 69.9 0 113.1-62.4 113.1-133.9 0-68.8-37.4-119.5-100.3-119.5-33.1 0-56.6 12.8-78.4 34.7V.8L556 2.9v11.2c35.2 1.1 43.2 9.1 43.2 26.7v296.7l-1.6 47zM705.4 369c-26.1 0-50.2-14.9-61.4-46.4V178c16-16.5 34.2-26.7 59.2-26.7 42.2 0 69.9 41.6 69.9 99.8 0 72.6-21.3 117.9-67.7 117.9zm139.8 15.5h9.1l22.4-28.3c26.1 18.7 52.3 26.1 80.6 26.1 69.9 0 113.1-62.4 113.1-133.9 0-68.8-37.4-119.5-100.3-119.5-33.1 0-56.6 12.8-78.4 34.7V.8l-88.1 2.1v11.2c35.2 1.1 43.2 9.1 43.2 26.7v296.7l-1.6 47zM953 369c-26.1 0-50.2-14.9-61.4-46.4V178c16-16.5 34.2-26.7 59.2-26.7 42.2 0 69.9 41.6 69.9 99.8.1 72.6-21.3 117.9-67.7 117.9zm290.8-179.3V31.2h40c69.9 0 92.9 26.7 92.9 74.7 0 51.2-15.5 83.8-87 83.8h-45.9zm0 15h43.2c59.2 0 77.4 11.7 82.7 64.6l4.3 45.9c4.8 48.6 16.5 66.7 79 66.7 10.7 0 25.6-1.6 35.8-4.3v-11.7c-42.2-1.1-52.8-8.5-59.8-49.1l-5.3-36.3c-7.5-48-20.3-77.9-91.8-83.2v-1.6c73.1-12.8 100.9-47 100.9-91.3 0-48-37.4-88.1-145.2-88.1H1135V28c46.4 1.6 58.2 11.2 58.2 31v276.4c0 19.7-11.7 28.8-58.2 30.4v12.3h165.4v-12.3c-48.6-1.6-56.6-9.6-56.6-30.4V204.7zm341.6 177.7c53.9 0 81.6-30.4 101.4-63.5l-8-6.9c-21.9 27.2-43.8 45.9-75.8 45.9-55 0-83.8-45.9-83.8-105.1v-9.6h164.9c4.3-58.7-28.8-114.2-98.7-114.2-65.6 0-115.3 56-115.3 129.1 0 70.4 43.2 124.3 115.3 124.3zm-3.8-240.7c41.1 0 58.2 36.3 53.4 87.5l-115.3 1.6c4.3-61.9 28.3-89.1 61.9-89.1zm103.6 338.9h134.5v-11.2c-39.5-.5-50.7-4.3-50.7-20.3v-84.9c19.7 10.7 39 17.6 66.2 17.6 68.8 0 110.5-58.2 110.5-131.8 0-70.4-34.7-121.1-96.6-121.1-33.1 0-58.2 16-81.1 38.4v-35.2l-82.7 2.1v11.2c31 .5 39 10.7 39 26.7v277c0 16-8 19.7-39 20.3v11.2h-.1zm143.5-112.1c-29.9 0-49.6-13.3-59.8-45.9V181.7c15.5-17.1 34.2-30.4 60.3-30.4 42.2 0 66.7 42.7 66.7 101.4.1 74.7-26.6 115.8-67.2 115.8zm257.3 13.9c67.2 0 119.5-53.4 119.5-128.1 0-74.2-49.6-125.4-119.5-125.4-67.8 0-120.6 53.4-120.6 127.5-.1 74.8 49.6 126 120.6 126zm2.1-13.3c-42.7 0-72-32.6-72-113.7 0-81.6 25.1-113.7 67.2-113.7 42.7 0 72 32 72 113.7 0 81.1-25.6 113.7-67.2 113.7zm118.5 9h128.6v-11.7c-34.7-.5-44.8-4.3-44.8-19.7v-151c13.9-22.4 29.9-38.4 53.9-40-1.1 3.7-2.1 8-2.1 11.7 0 18.1 13.3 28.3 29.3 28.3 16.5 0 27.8-12.8 27.8-29.9 0-18.1-11.7-35.8-39-35.8s-51.8 20.8-71 50.2v-48l-82.7 2.1v11.2c30.9.5 39 10.7 39 26.7v174.5c0 15.5-8 19.2-39 19.7v11.7zm299.4 5.4c32 0 53.4-16.5 72-50.7l-9.1-6.4c-13.9 21.3-28.3 32.6-43.2 32.6-21.9 0-32-12.8-32-43.8V153.4h76.8v-19.2h-76.8V45.6l-44.3 19.2v67.8l-48.6 11.2V154h48v161.7c0 44.8 18.7 67.8 57.2 67.8z">
+                        </path>
+                    </svg>
+                </a>
+                <button id="hamburger" class="header-nav__icon" aria-label="navigation menu">
+                    <span class="menu__initial">
+                        <svg viewBox="0 0 22 15" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M2 7.5h18m-18 6h18M2 1.5h18" stroke-width="2.09" fill="none"
+                                stroke-linecap="square"></path>
+                        </svg>
+                    </span>
+                </button>
+                <ul class="cs-menu">
+                    <a href="cars.html">
+                        <li>CARS</li>
+                    </a>
+                    <a href="#">
+                        <li>YACHTS</li>
+                    </a>
+                    <a href="#">
+                        <li>AVIATION</li>
+                    </a>
+                    <a href="#">
+                        <li>WATCHES</li>
+                    </a>
+                    <a href="#">
+                        <li>STYLE</li>
+                    </a>
+                    <a href="#">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#">
+                        <li>FOOD & DRINK</li>
+                    </a>
+                    <a href="#">
+                        <li>TRAVEL</li>
+                    </a>
+                </ul>
+                <div class="text-subscribe">
+                    <a href="#">
+                        <p>subscribe</p>
+                    </a>
+                </div>
+                <a href="#" target="_blank" class="logo-scroll2"><svg version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 720 252" style="enable-background:new 0 0 720 252;" xml:space="preserve">
+                        <title>RR One</title>
+                        <style type="text/css">
+                            .st0 {
+                                fill: #BE1E2D;
+                            }
+                        </style>
+                        <g>
+                            <g>
+                                <g>
+                                    <path class="st0" d="M488,239.1c37.2-0.4,47.3-4.2,47.3-23.5V44.2c0-22.1-5.3-25.9-47-26.6v-2.8l75.7-6.3v207.1
+                                c0,18.9,9.5,23.1,47.7,23.5v3.1H488V239.1z"></path>
+                                </g>
+                            </g>
+                            <path d="M435.9,199.7l-2-14.5c-5.1-36.3-15.5-54.8-64.2-59.9v-1c49.8-7.7,70.6-29.2,70.6-59.5c0-35-34.6-57.2-96.5-57.2h-97.8v2.7
+                        c34.3,1,39.7,7.1,39.7,23.2v182.3c0,12.9-3.4,19.2-21.3,21.8c-1.9,0.2-3.9,0.3-5.8,0.4c-28.7-0.5-34.3-7.9-39.5-38.3l-2-14.5
+                        c-5.1-36.3-15.5-54.8-64.2-59.9v-1c49.8-7.7,70.6-29.2,70.6-59.5c0-35-34.6-57.2-96.5-57.2H29.1v2.7c34.3,1,39.7,7.1,39.7,23.2
+                        v182.3c0,16.5-5.4,22.2-39.7,23.2v3h106.3v-3c-33.6-1-38-6.4-38-22.8v-88.8h33c40,0,50.1,7.7,54.1,41.4l3.7,30.3
+                        c3.2,25.8,8.1,40.1,27.9,43.7l-0.1,0c0,0,14.2,3.2,55.7-0.7h80.5v-3c-33.6-1-38-6.4-38-22.8v-88.8h33c40,0,50.1,7.7,54.1,41.4
+                        L405,199c3.7,30.3,9.8,44.7,39.3,44.7c11.1,0,23.5-1,34.6-3V238C447,238,441.3,231.3,435.9,199.7z M129.4,122.3h-32V12.7h27.9
+                        c49.4,0,65.6,17.2,65.6,52.5C190.9,102.8,179.8,122.3,129.4,122.3z M346.1,122.3h-32V12.7h27.9c49.4,0,65.6,17.2,65.6,52.5
+                        C407.7,102.8,396.6,122.3,346.1,122.3z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <div class="search2">
+                    <div class="icon2"></div>
+                    <div class="input">
+                        <input type="text" placeholder="Search" id="mysearch">
+                    </div>
+                </div>
+                <div class="search-resp2">
+
+                    <i class="fa-solid fa-magnifying-glass" id="searchicon-resp2"></i>
+                    <i class="fa-solid fa-x" id="cs-xmarkicon-resp2"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cs-section1 cs-container">
+        <div class="cs-maincontent">
+            <header class="post-header">
+                <div class="cs-part1">
+                    <div class="cs-left">
+                        <ul>
+                            <li><a href="">MOTORS</a></li>
+                            <li><a href="cars.html">CARS</a></li>
+                        </ul>
+                    </div>
+                    <span>AUGUST 29, 2022</span>
+                </div>
+                <h1>Mercedes’s All-Electric AMG EQE and All-Wheel-Drive EQS Headline the Its 2023 EV Lineup</h1>
+                <h2>The German automaker's line of battery-powered vehicles continues to grow.</h2>
+            </header>
+            <div class="cs-allparts">
+                <div class="cs-partleft">
+                    <div class="cs-socialmedia">
+                        <div class="person-infor">
+                            <span>By</span>
+                            <a href="#">BRYAN HOOD</a>
+                            <a href="#"><svg id="svg-icon-more" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.53 5.27H.74V.6h4.67v1.78H2.53v2.89zm10.34 7.45H9.98v1.79h4.67V9.84h-1.78v2.88zM9.98 2.38h2.89v2.89h1.78V.6H9.98v1.78zM2.53 9.84H.74v4.67h4.67v-1.79H2.53V9.84zM11 6.66H8.59V4.24H6.8v2.42H4.39v1.78H6.8v2.42h1.78V8.44H11V6.66z"
+                                        fill="#000000" fill-rule="evenodd"></path>
+                                </svg></a>
+                            <div class="cs-person-infor-content">
+                                <div class="cs-image-content">
+                                    <div class="cs-image">
+                                        <img src="assets/img/Bryan_Hood-Polilovi.png" alt="">
+                                    </div>
+                                    <a href="https://robbreport.com/author/bryan-hood/">Bryan Hood</a>
+                                </div>
+                                <div class="cs-text">
+                                    <h2>Bryan Hood's Most Recent Stories</h2>
+                                    <ul>
+                                        <li><span style="background-image: url('assets/img/arrow.png');"></span><a
+                                                href="https://robbreport.com/style/watch-collector/urwerk-ur-100v-ultraviolet-1234744723/">Urwerk’s
+                                                New UR-100V Ultraviolet Watch Tests the Limits of the Color Spectrum</a>
+                                        </li>
+                                        <li><span style="background-image: url('assets/img/arrow.png');"></span><a
+                                                href="https://robbreport.com/motors/cars/bugatti-chiron-sport-110-ans-for-sale-1234744721/">Bugatti
+                                                Only Made 20 of Its Birthday-Edition Chiron Supercars. Now One Is Up for
+                                                Sale.</a></li>
+                                        <li><span style="background-image: url('assets/img/arrow.png');"></span><a
+                                                href="https://robbreport.com/motors/cars/mclaren-possible-suv-electric-1234744459/">McLaren
+                                                Is Finally Thinking About Making an SUV—and It Could Be Electric</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        </ul>
+
+                        <div class="cs-icons">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="fa-solid fa-envelope"></i></a>
+                            <a href=""><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="cs-imgbox1">
+                        <div class="cs-img">
+                            <img src="assets/img/foto1.png" alt="">
+                        </div>
+                        <p>Mercedes-Benz</p>
+                    </div>
+                    <div class="cs-textbox">
+                        <p><a href="#">Mercedes-Benz</a> continues to keep the accelerator down on its electrification
+                            efforts.</p>
+                        <p>The German luxury marque has just revealed what updates drivers can look forward to from its
+                            range of vehicles in 2023. The upcoming model year will see the brand’s EQ line of
+                            battery-powered models continue to expand with several new models planned, including a
+                            high-performance AMG variant of the EQE and a new version of its battery-powered flagship,
+                            the <a href="#">EQS</a>.</p>
+                        <p>We already knew the AMG EQE was coming after Mercedes <a href="#">offered a peek earlier this
+                                spring </a>, but now we know when to expect it here in the US. The mid-size four-door is
+                            equipped with a powerful 328-volt, high-performance drive battery and AMG Performance
+                            4MATIC+ variable all-wheel drive, according to the brand. The system is able to adjust drive
+                            torque between the front and rear axles depending on the driving situation. We’ll have to
+                            wait for the full specs, but Mercedes has previously said the EV’s drivetrain can deliver up
+                            to 677 horses and 701 ft lbs of twist with the optional Dynamic Plus package.</p>
+                    </div>
+                    <div class="cs-imgbox2">
+                        <div class="cs-img">
+                            <img src="assets/img/foto2.png" alt="">
+                        </div>
+                        <p>Production of the EQS SUV began in Alabama earlier this month.<br>
+                            <span>Mercedes-Benz</span>
+                        </p>
+                    </div>
+                    <div class="cs-textbox">
+                        <p>The new EQS may not be an AMG model—<a href="#">there’s already one of those</a>—but it’s
+                            aimed at drivers who want an even more capable version of its top-of-the-line electric
+                            sedan. The EV has previously been available here with one of two powertrains, the 450+ or
+                            the 580 4MATIC. The new 450 4MATIC means you can now get all-wheel-drive without opting for
+                            the biggest battery pack. We’ll have to wait on specs, but you can expect its driving range
+                            to come in at over 300 miles.</p>
+                        <p>Other new Mercedes EVs include <a href="#">an SUV based on the EQS</a>, which has just gone
+                            into production in Alabama, and one based on the EQE, which will follow soon after. Mercedes
+                            will also launch a 350 4MATIC version of the EQE sedan, along with a long-range version of
+                            its entry-level EQB SUV called the 250+, <a href="#">according to Electrek</a>. All the new
+                            models are expected to make it to the US before the end of the year.</p>
+                    </div>
+                    <div class="cs-videobox">
+                        <h2>WATCH</h2>
+                        <div class="cs-content">
+                            <iframe width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="cs-textbox">
+                        <p>We don’t know how much the new EVs will cost, but European pricing for the AMG EQE may offer
+                            a hint of what to expect for at least one of the vehicles. <a href="">CarBuzz reports</a>
+                            that the sporty mid-size sedan will start at €109,778 ($109,758 at current conversion) and
+                            top out at €160,923 ($160,883). With the dollar and Euro currently worth virtually the same
+                            as of this writing, it wouldn’t be shocking if the EV’s stateside pricing is similar.</p>
+                    </div>
+                    <div class="cs-linkbox">
+                        <h2>RELATED STORIES</h2>
+                        <ul>
+                            <li><span style="background-image: url('assets/img/arrow.png');"></span><a
+                                    href="https://robbreport.com/motors/cars/galpins-porsche-911-carrera-targa-safari-peoples-choice-award-werks-reunion-1234743569/">This
+                                    Psychedelic 1974 Porsche 911 Carrera Just Won the People’s Choice Award at Werks
+                                    Reunion</a></li>
+                            <li><span style="background-image: url('assets/img/arrow.png');"></span><a
+                                    href="https://robbreport.com/motors/cars/video-rolls-royce-cullinan-the-gunslinger-1234744641/">Watch
+                                    a Rolls-Royce Cullinan Play the Hero in the Short Western ‘The Gunslinger’</a></li>
+                            <li><span style="background-image: url('assets/img/arrow.png');"></span><a
+                                    href="https://robbreport.com/motors/cars/genesis-electrified-g80-pricing-1234744297/">Genesis
+                                    Just Revealed How Much Its First All-Electric Sedan Will Cost</a></li>
+                        </ul>
+                    </div>
+                    <div class="cs-taglist">
+                        <h2>READ MORE ON:</h2>
+                        <ul>
+                            <li><a href="">ELECTRIC VEHICLE</a></li>
+                            <li><a href="">MERCEDES-AMG</a></li>
+                            <li><a href="">MERCEDES-BENZ</a></li>
+                        </ul>
+                    </div>
+                    <div class="cs-newsletter-textbox">
+                        <p>Like this article? Get the Robb Report newsletter for similar stories delivered straight to
+                            your inbox.</p>
+                        <a href="https://cloud.email.robbreport.com/signup/?email=">sign up</a>
+                    </div>
+                    <div class="cs-sponsored-textbox">
+                        <div class="cs-image">
+                            <img src="assets/img/foto3.png" alt="">
+                        </div>
+                        <div class="cs-text">
+                            <h3>SPONSORED CONTENT</h3>
+                            <h2>Join the 672 Wine Club</h2>
+                            <a href=""> <span>By</span> ROBB REPORT</a>
+                            <p>Join a unique community of wine lovers when you sign up for 672 Wine Club’s quarterly
+                                shipments. Limited to 672 members.</p>
+                        </div>
+                    </div>
+                    <div class="cs-sponsored-content-textbox">
+                        <div class="cs-header">
+                            <h2>PENSKE LUXURY</h2>
+                            <div class="cs-content"><span>Sponsored Content</span><a href=""><img
+                                        src="assets/img/penske.png" alt=""></a></div>
+                        </div>
+                        <div class="cs-cardbox">
+                            <div class="cs-card">
+                                <img src="assets/img/foto4.png" alt="">
+                                <h2>Vehicle Spotlight: 2021 Porsche 911 Carrera S Cabriolet</h2>
+                                <a href=""><span>Learn More</span><i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                            <div class="cs-card">
+                                <img src="assets/img/foto5.png" alt="">
+                                <h2>Vehicle Spotlight: 2021 Porsche 911 Carrera S Cabriolet</h2>
+                                <a href=""><span>Learn More</span><i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                            <div class="cs-card">
+                                <img src="assets/img/foto6.png" alt="">
+                                <h2>Vehicle Spotlight: 2021 Porsche 911 Carrera S Cabriolet</h2>
+                                <a href=""><span>Learn More</span><i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-partright">
+                    <div class="cs-part-1">
+                        <h2>GET THE MAGAZINE!</h2>
+                        <div class="cs-imagebox">
+                            <img src="assets/img/get-magazin.png" alt="">
+                            <p>Subscribe now and save. Includes digital magazine access + a free gift.</p>
+                        </div>
+                        <a href="https://rbr.secure.darwin.cx/I23ATN1R">SUBSCRIBE TODAY!</a>
+                    </div>
+                    <div class="cs-part-2">
+                        <h3>LATEST GALLERIES IN CARS</h3>
+                        <div class="cs-image">
+                            <a
+                                href="https://robbreport.com/motors/cars/gallery/rolls-royce-cullinan-in-film-the-gunslinger-in-photos-1234744653/"><img
+                                    src="assets/img/right_image1.png" alt=""></a>
+                            <p>ROLLS-ROYCE <a
+                                    href="https://robbreport.com/motors/cars/gallery/rolls-royce-cullinan-in-film-the-gunslinger-in-photos-1234744653/">The
+                                    Rolls-Royce Cullinan Stars in ‘The Gunslinger’ in Photos</a></p>
+                        </div>
+                        <div class="cs-image">
+                            <a
+                                href="https://robbreport.com/motors/cars/gallery/1982-delorean-worldwide-auctioneers-in-photos-1234743775/"><img
+                                    src="assets/img/right_image2.png" alt=""></a>
+                            <p>WORLDWIDE AUCTIONEERS<a
+                                    href="https://robbreport.com/motors/cars/gallery/1982-delorean-worldwide-auctioneers-in-photos-1234743775/">
+                                    The 1982 DeLorean Offered Through Worldwide Auctioneers in Photos</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-brand">
+        <div class="cs-brand-header">
+            <h3>MORE FROM OUR BRANDS</h3>
+        </div>
+        <div class="cs-section-brand-cont">
+            <div class="cs-brand-box">
+                <div>
+                    <a href=" #">
+                        <img src="./assets/img/ss.png" alt="">
+                    </a>
+                </div>
+                <div class="cs-brand-p">
+                    <a href="#">
+                        <p>WWD</p>
+                    </a>
+                    <a href="#">
+                        <span>Rihanna’s Savage x Fenty Adds Loungewear to the Assortment</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cs-brand-box">
+                <div>
+                    <a href="#">
+                        <img src="./assets/img/ss.png" alt="">
+                    </a>
+                </div>
+                <div class="cs-brand-p">
+                    <a href="#">
+                        <p>SPORTICO</p>
+                    </a>
+                    <a href="#">
+                        <span>NIL Cash Spurs U.S. Bank and Opendorse to Offer Financial Literacy Courses</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cs-brand-box">
+                <div>
+                    <a href="#">
+                        <img src="./assets/img/ss.png" alt="">
+                    </a>
+                </div>
+                <div class="cs-brand-p">
+                    <a href="#">
+                        <p>VARIETY</p>
+                    </a>
+                    <a href="#">
+                        <span>How to Watch Guy Fieri’s New Hollywood Cooking Game Show ‘Guy’s Ultimate Game
+                            Night’</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cs-brand-box">
+                <div>
+                    <a href="#">
+                        <img src="./assets/img/ss.png" alt="">
+                    </a>
+                </div>
+                <div class="cs-brand-p">
+                    <a href="#">
+                        <p>ARTNEWS</p>
+                    </a>
+                    <a href="#">
+                        <span>Painter Elizabeth Peyton Did the Poster for Timothée Chalamet and Taylor Russell’s New
+                            Horror Movie</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cs-brand-box">
+                <div>
+                    <a href="#">
+                        <img src="./assets/img/ss.png" alt="">
+                    </a>
+                </div>
+                <div class="cs-brand-p">
+                    <a href="#">
+                        <p>DIRT</p>
+                    </a>
+                    <a href="#">
+                        <span>An Exquisite Mount Kisco Victorian Figures at the Center of an American Girl Doll’s
+                            Story</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer start -->
+    <footer class="cs-footer-cont">
+        <div class="cs-footer-top">
+            <div class="cs-footer-box">
+                <ul>
+                    <li>
+                        <h2>Robb Report</h2>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">International</a></li>
+                    <li><a href="#">PMC Fashion & Luxury</a></li>
+                </ul>
+            </div>
+            <div class="cs-footer-box">
+                <ul>
+                    <li>
+                        <h2>Legal</h2>
+                    </li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">AdChoices</a></li>
+                    <li><a href="#">Privacy Preferences</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Licensing/Re-Use Of Content</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="cs-footer-box">
+                <ul>
+                    <li>
+                        <h2>Subscribe/Purchase</h2>
+                    </li>
+                    <li><a href="#">Subscribe To Robb Report</a></li>
+                    <li><a href="#">Purchase Back Issues</a></li>
+                    <li><a href="#">Give A Gift</a></li>
+                </ul>
+            </div>
+            <div class="cs-footer-box">
+                <ul>
+                    <li>
+                        <h2>Subscriber Services</h2>
+                    </li>
+                    <li><a href="#">Renew</a></li>
+                    <li><a href="#">Change Your Address</a></li>
+                    <li><a href="#">Pay Your Invoice</a></li>
+                    <li><a href="#">Additional Services</a></li>
+                    <li><a href="#">Digital Subscription FAQ</a></li>
+                    <li><a href="#">Email Us</a></li>
+                </ul>
+            </div>
+            <div class="cs-footer-box">
+                <ul>
+                    <li>
+                        <h2>Connect</h2>
+                    </li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile section accordion start -->
+        <div class="accordion mobile-footer" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h2>Robb Report</h2>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">PMC Fashion & Luxury</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h2>Legal</h2>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">AdChoices</a></li>
+                            <li><a href="#">Privacy Preferences</a></li>
+                            <li><a href="#">Terms Of Use</a></li>
+                            <li><a href="#">Licensing/Re-Use Of Content</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h2>Subscribe/Purchase</h2>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Subscribe To Robb Report</a></li>
+                            <li><a href="#">Purchase Back Issues</a></li>
+                            <li><a href="#">Give A Gift</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h2>Subscriber Services</h2>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Renew</a></li>
+                            <li><a href="#">Change Your Address</a></li>
+                            <li><a href="#">Pay Your Invoice</a></li>
+                            <li><a href="#">Additional Services</a></li>
+                            <li><a href="#">Digital Subscription FAQ</a></li>
+                            <li><a href="#">Email Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <h2>Connect</h2>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile section accordion end -->
+        <div class="cs-footer-bottom">
+            <div class="cs-footer-cont-bottom">
+                <div>
+                    <h2>Robert Report</h2>
+                </div>
+                <div>
+                    <p>Robb Report is a part of Penske Media Corporation. &copy; <span class="date"></span> Robb Report
+                        Media, LLC. All Rights
+                        Reserved.
+                    </p>
+                    <p class="text-center">Powered by WordPress.com VIP</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--boostrap 5 ↓ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/news_main.js"></script>
+</body>
+
+</html>
